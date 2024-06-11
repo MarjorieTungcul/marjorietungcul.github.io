@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Random Number Generator.css">
+        <title>Random Number Generator</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Random Number Generator</h1>
+
+            <input type="number" id="number_of_dice" class="input_box" placeholder = "How many dices you want to roll?" > <br>
+            
+            <select id="type_of_dice" class="input_box" >
+                <option value="" disabled selected >Choose dice type</option>
+                <option value="4">d4</option>
+                <option value="6">d6</option>
+                <option value="8">d8</option>
+                <option value="10">d10</option>
+                <option value="12">d12</option>
+                <option value="20">d20</option>
+            </select> <br>
+
+            <button onclick="roll_the_dice()">Generate</button>
+
+            <div id="output_container" class="container_for_output"></div>
+        </div>
+        <script src="Random Number Generator.js"></script>
+    </body>
+</html>
+
+
+
