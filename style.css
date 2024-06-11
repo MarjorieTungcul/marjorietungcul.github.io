@@ -227,6 +227,16 @@ header.sticky {
     font-size: 3rem;
     font-weight: 600;
 }
+middle1{
+    text-align: left;
+}
+.mid-left1 h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--main-color);
+    margin-bottom: 15px;
+    font-family: "Caveat", cursive;
+}
 .pricing-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, auto)); 
@@ -253,17 +263,9 @@ header.sticky {
 }
 .card-left h4 {
     font-size: 25px;
-}
-.card-left h5 {
-    font-size: 20px;
-    color: var(--main-color);
     font-family: "Caveat", cursive;
 }
 .card-left h3 {
-    font-size: 28px;
-    font-weight: 700;
-}
-.card-left h3 span {
     font-size: 22px;
     font-weight: 500;
 }
