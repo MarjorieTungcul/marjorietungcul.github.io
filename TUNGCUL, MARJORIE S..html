@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+#content {
+  display: none;
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+#content img {
+  display: block;
+  margin: 0 auto;
+  width: 100px; 
+  height: auto;
+}
+</style>
+<body>
+
+<div class="navbar">
+  <a href="javascript:void(0);" onclick="showContent('Home')"><i class="fa fa-fw fa-home"></i> Home</a> 
+  <a href="javascript:void(0);" onclick="showContent('Search')"><i class="fa fa-fw fa-search"></i> Search</a> 
+  <a href="javascript:void(0);" onclick="showContent('Contact')"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+  <a href="javascript:void(0);" onclick="showContent('Login')"><i class="fa fa-fw fa-user"></i> Login</a>
+</div>
+
+<div id="content">
+  <h2 id="contentHeading"></h2>
+  <p id="contentParagraph"></p>
+  <img id="contentImage" src="" alt="">
+</div>
+
+<script>
+function showContent(buttonName) {
+  const content = document.getElementById("content");
+  const contentHeading = document.getElementById("contentHeading");
+  const contentParagraph = document.getElementById("contentParagraph");
+  const contentImage = document.getElementById("contentImage");
+
+  switch (buttonName) {
+    case 'Home':
+      contentHeading.textContent = "Home Heading";
+      contentParagraph.textContent = "This is the content for the Home page.";
+      contentImage.src = "https://th.bing.com/th/id/OIP.E7MzmMXUlFI4oNOrgMFN4AHaHa?pid=ImgDet&rs=1";
+      break;
+    case 'Search':
+      contentHeading.textContent = "Search Heading";
+      contentParagraph.textContent = "This is the content for the Search page.";
+      contentImage.src = "https://static.vecteezy.com/system/resources/previews/000/633/501/original/vector-search-icon-symbol-sign.jpg";
+      break;
+    case 'Contact':
+      contentHeading.textContent = "Contact Heading";
+      contentParagraph.textContent = "This is the content for the Contact page.";
+      contentImage.src = "https://th.bing.com/th/id/OIP.OsFrSd5bI1uq1jIDKymn6QHaHa?pid=ImgDet&rs=1"; 
+      break;
+    case 'Login':
+      contentHeading.textContent = "Login Heading";
+      contentParagraph.textContent = "This is the content for the Login page.";
+      contentImage.src = "https://static.vecteezy.com/system/resources/previews/000/575/345/original/vector-login-sign-icon.jpg"; 
+      break;
+  }
+
+  content.style.display = "block";
+}
+</script>
+
+</body>
+</html>
