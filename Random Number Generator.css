@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://scontent.fmnl34-1.fna.fbcdn.net/v/t39.30808-6/403094298_1614387499091217_1253136473512677361_n.jpg?stp=dst-jpg_p960x960&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEvWpo-hK0L7I2kTK2fACrZv7juLUymyzy_uO4tTKbLPByumdYt8s25djqaQpww9q6QhMTxy4s-uJuGwr8e85h1&_nc_ohc=tzGbdzm6heMAX9fU4Bi&_nc_oc=AQm3xaTXAXMXrx_XWc42tUAarF_vpDXiZu8qd4JU8KSDANX6-P17Tatg-aelwYzfJO6N00G3wrAhN5beZeE_nPTA&_nc_zt=23&_nc_ht=scontent.fmnl34-1.fna&oh=00_AfCb5QLKkybzoA5PesaX-6TjHaxu3XCkoTJOmtglCZru8Q&oe=65672122);
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: black;
+    border: 2px solid blue;
+    padding: 50px;
+    border-radius: 125px;
+    text-align: center;
+    height:120vh;
+    width:100vh;
+}
+
+h1 {
+    color: blue;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.input_box {
+    margin: 10px;
+    padding: 8px;
+    width: 250px;
+    border: 2px solid blue;
+    background-color: lightblue;
+    font-weight: bold;
+}
+
+.input_box::placeholder {
+    color: black;
+    font-weight: bold;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    margin:10px;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid white;
+    font-weight: bold;
+}
+
+
+.container_for_output {
+    display: grid;
+    grid-template-columns: repeat(9, minmax(0px, 1fr));
+    grid-gap: 10px;
+    margin-top: 20px; 
+    overflow-y: auto;
+    max-height: calc(100vh - 120px);
+    white-space: nowrap;
+    font-weight: bold;
+    color: blue;
+}
+
+.dice_output_container {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: 2px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color:white;
+    border-radius: 4px;
+}
+
